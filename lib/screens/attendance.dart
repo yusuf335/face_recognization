@@ -48,21 +48,16 @@ _realdb_once() {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      // body: SafeArea(
-      //   child: SingleChildScrollView(
-      //     child: Column(
-      //       children: [
-      //         Text(databasejson),
-      //         TextButton(
-      //           onPressed: () {
-      //             _realdb_once();
-      //           },
-      //           child: Text("Read"),
-      //         ),
-      //       ],
-      //     ),
-      //   ),
-      // ),
+      body: Stack(
+        children: [
+          Image(
+            image: AssetImage("assests/images/welcome_page.gif"),
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
+            fit: BoxFit.fitWidth,
+            ),
+        ],
+      ),
     );
   }
   
